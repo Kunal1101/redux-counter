@@ -1,12 +1,70 @@
-# React + Vite
+## 🚀 Project Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **React + Vite** project that demonstrates the use of **React Redux** and **Redux Toolkit** for state management. It serves as a beginner-friendly example to understand how to manage application state using Redux in a modern React app.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ⚙️ Technologies Used
 
-## Expanding the ESLint configuration
+- **React** – JavaScript library for building user interfaces
+- **Vite** – Fast frontend build tool
+- **Tailwind CSS** – Utility-first CSS framework for styling
+- **Redux** – State management library
+- **Redux Toolkit** – Official, recommended way to write Redux logic
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Getting Started
+
+Follow these steps to run the project locally:
+
+### 1️⃣ Clone the Repository
+
+```sh
+git clone https://github.com/Kunal1101/redux-counter
+cd redux-counter
+```
+
+### 2️⃣ Install Dependencies
+
+```sh
+npm install
+```
+
+### 3️⃣ Start the Development Server
+
+```sh
+npm run dev
+```
+
+The app will be available at **[http://localhost:5173/](http://localhost:5173/)** (default Vite port).
+
+---
+
+## 🔄 How Redux Works in This Project
+
+1. **Installation**: Installed `@reduxjs/toolkit` and `react-redux` packages.
+
+2. **Creating a Slice**: In `CounterSlice.js`, a slice is created using `createReducer`, which includes:
+
+   - Initial state
+   - Reducers (increment, decrement, etc.)
+
+3. **Configuring Store**: In `store.js`, the Redux store is configured using `configureStore` and the counter slice reducer is added.
+
+4. **Providing the Store**: In `main.jsx`, the app is wrapped with `<Provider>` from `react-redux` and passed the store as a prop.
+
+5. **Using Redux State in Components**:
+
+   - `useSelector` is used to access the state.
+   - `useDispatch` is used to dispatch actions like increment and decrement.
+
+---
+
+## 🤝 Contributing
+
+Feel free to fork this repo, make improvements, and submit a **pull request**. All contributions are welcome! 🎉
+
+---
+
+### ⭐ Happy Coding! 🚀
