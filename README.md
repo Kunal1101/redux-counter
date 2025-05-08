@@ -45,7 +45,7 @@ The app will be available at **[http://localhost:5173/](http://localhost:5173/)*
 
 1. **Installation**: Installed `@reduxjs/toolkit` and `react-redux` packages.
 
-2. **Creating a Slice**: In `CounterSlice.js`, a slice is created using `createSlice`, which includes:
+2. **Creating a Slice**: In `CounterSlice.js`, a slice is created using `createReducer`, which includes:
 
    - Initial state
    - Reducers (increment, decrement, etc.)
